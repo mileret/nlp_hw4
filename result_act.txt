@@ -1,0 +1,105 @@
+You are an agent and you will complete a task.
+
+---
+
+Here are three examples:
+
+Example 1:
+You are in the middle of a room. Looking quickly around you, you see a cabinet 10, a cabinet 9, a cabinet 8, a cabinet 7, a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a diningtable 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: heat some egg and put it in diningtable.
+>Action: open fridge 1
+Observation: You open the fridge 1. The fridge 1 is open. In it, you see a lettuce 2, a mug 2, and a potato 3.
+>Action: go to countertop 1
+Observation: On the countertop 1, you see a bread 1, a fork 1, and a saltshaker 1.
+>Action: go to countertop 2
+Observation: On the countertop 2, you see nothing.
+>Action: go to countertop 3
+Observation: On the countertop 3, you see a bowl 1, a butterknife 1, a egg 2, a kettle 2, a plate 1, a sink 1, and a spatula 2.
+>Action: take egg 2 from countertop 3
+Observation: You pick up the egg 2 from the countertop 3.
+>Action: go to microwave 1
+Observation: The microwave 1 is closed.
+>Action: heat egg 2 with microwave 1
+Observation: You heat the egg 2 using the microwave 1.
+>Action: go to diningtable 1
+Observation: On the diningtable 1, you see a apple 2, a bread 3, a egg 1, a kettle 1, a knife 1, a mug 1, a papertowelroll 1, a peppershaker 2, a potato 1, a soapbottle 1, and a spatula 1.
+>Action: put egg 2 in/on diningtable 1
+Observation: You put the egg 2 in/on the diningtable 1.
+
+
+Example 2:
+You are in the middle of a room. Looking quickly around you, you see a cabinet 13, a cabinet 12, a cabinet 11, a cabinet 10, a cabinet 9, a cabinet 8, a cabinet 7, a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 1, a diningtable 1, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: put a hot apple in fridge.
+>Action: go to fridge 1
+Observation: The fridge 1 is closed.
+>Action: open fridge 1
+Observation: You open the fridge 1. The fridge 1 is open. In it, you see a cup 1, and a egg 1.
+>Action: go to diningtable 1
+Observation: On the diningtable 1, you see a apple 1, a bread 1, a fork 3, a fork 2, a fork 1, a mug 2, a peppershaker 3, a plate 2, a pot 1, a soapbottle 3, a spatula 1, a spoon 3, a spoon 2, a spoon 1, a winebottle 3, and a winebottle 2.
+>Action: take apple 1 from diningtable 1
+Observation: You pick up the apple 1 from the diningtable 1.
+>Action: go to microwave 1
+Observation: The microwave 1 is closed.
+>Action: heat apple 1 with microwave 1
+Observation: You heat the apple 1 using the microwave 1.
+>Action: go to fridge 1
+Observation: The fridge 1 is open. In it, you see a cup 1, and a egg 1.
+>Action: put apple 1 in/on fridge 1
+Observation: You put the apple 1 in/on the fridge 1.
+
+
+Example 3:
+You are in the middle of a room. Looking quickly around you, you see a cabinet 11, a cabinet 10, a cabinet 9, a cabinet 8, a cabinet 7, a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 2, a countertop 1, a diningtable 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: heat some bread and put it in countertop.
+>Action: go to fridge 1
+Observation: The fridge 1 is closed.
+>Action: open fridge 1
+Observation: You open the fridge 1. The fridge 1 is open. In it, you see a mug 3, and a mug 2.
+>Action: go to toaster 1
+Observation: On the toaster 1, you see nothing.
+>Action: go to diningtable 1
+Observation: On the diningtable 1, you see a bread 4, a bread 3, a bread 2, a bread 1, a cup 2, a knife 1, a lettuce 1, a potato 3, a tomato 3, a tomato 2, and a winebottle 3.
+>Action: take bread 1 from diningtable 1
+Observation: You pick up the bread 1 from the diningtable 1.
+>Action: go to microwave 1
+Observation: The microwave 1 is closed.
+>Action: heat bread 1 with microwave 1
+Observation: You heat the bread 1 using the microwave 1.
+>Action: go to countertop 1
+Observation: On the countertop 1, you see a apple 1, a egg 1, a pan 2, a peppershaker 3, a plate 2, a plate 1, a soapbottle 1, and a winebottle 1.
+>Action: put bread 1 in/on countertop 1
+Observation: You put the bread 1 in/on the countertop 1.
+
+
+---
+
+Here is your task:
+You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+
+Your task is to: put a hot potato in garbagecan.
+>Action: go to fridge 1
+Observation: The fridge 1 is closed.
+>Action: open fridge 1
+Observation: You open the fridge 1. The fridge 1 is open. In it, you see a apple 1, a bread 2, a cup 2, a cup 1, a lettuce 1, a mug 1, a tomato 2, and a tomato 1.
+>Action: take potato 3 from fridge 1
+Observation: Nothing happens.
+>Action: take potato 2 from fridge 1
+Observation: Nothing happens.
+>Action: take potato 1 from fridge 1
+Observation: Nothing happens.
+>Action: go to countertop 1
+Observation: On the countertop 1, you see a apple 2, a cellphone 2, a pan 1, and a soapbottle 1.
+>Action: take potato 1 from countertop 1
+Observation: Nothing happens.
+>Action: go to countertop 2
+Observation: On the countertop 2, you see a bowl 1, a bread 1, a butterknife 1, a cellphone 1, a glassbottle 1, a knife 1, a peppershaker 2, a potato 2, a potato 1, a spoon 2, and a statue 1.
+>Action: take potato 1 from countertop 2
+Observation: You pick up the potato 1 from the countertop 2.
+>Action: go to microwave 1
+Observation: The microwave 1 is closed.
+>Action: heat potato 1 with microwave 1
+Observation: You heat the potato 1 using the microwave 1.
+>Action: go to garbagecan 1
+Observation: On the garbagecan 1, you see a apple 3, a egg 1, and a soapbottle 2.
+>Action: put potato 1 in/on garbagecan 1
+Observation: You put the potato 1 in/on the garbagecan 1.
